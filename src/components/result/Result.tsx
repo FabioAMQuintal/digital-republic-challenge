@@ -9,6 +9,7 @@ const Result = () => {
     let unidade = 'unidade'
     return (
         <ResultContainer>
+            <Label>QUANTIDADE DE TINTA NECESSÁRIA</Label>
             <ResultList>
                 {
                     results.map(item => {
