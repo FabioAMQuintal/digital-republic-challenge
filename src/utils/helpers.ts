@@ -61,6 +61,10 @@ class Helper {
         let total = [];
         let inkNecessary = this.calcTotalAreaFromWalls(storeArray) / this.inkRange;
 
+        if(inkNecessary === 0){
+            return []
+        }
+
         for (let i = 0; i < this.canOfInk.length; i++) {
             if(inkNecessary >= this.canOfInk[i]){
                 cans = Math.floor(inkNecessary / this.canOfInk[i]);
